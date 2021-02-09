@@ -22,16 +22,6 @@ git clone https://github.com/esirplayground/luci-app-poweroff.git package/diy/lu
 
 #增加LEDE的ShadowSocksR Plus+出国软件 (源码自带passwall出国软件)
 sed -i '$a src-git helloworld https://github.com/fw876/helloworld' feeds.conf.default
-svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/shadowsocksr-libev package/diy/shadowsocksr-libev
-svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/pdnsd-alt package/diy/pdnsd-alt
-svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/microsocks package/diy/microsocks
-svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/dns2socks package/diy/dns2socks
-svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/simple-obfs package/diy/simple-obfs
-svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/v2ray-plugin package/diy/v2ray-plugin
-svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/v2ray package/diy/v2ray
-svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/trojan package/diy/trojan
-svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/ipt2socks package/diy/ipt2socks
-svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/redsocks2 package/diy/redsocks2
 
 rm -rf ./package/lean/luci-theme-argon && git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon  #新的argon主题
 git clone https://github.com/jerrykuku/luci-app-argon-config package/lean/luci-app-argon-config  #argon主题设置（编译时候选上,在固件的‘系统’里面）
