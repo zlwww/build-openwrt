@@ -23,19 +23,5 @@ git clone https://github.com/esirplayground/luci-app-poweroff.git package/diy/lu
 #增加LEDE的ShadowSocksR Plus+出国软件 (源码自带passwall出国软件)
 sed -i '$a src-git helloworld https://github.com/fw876/helloworld' feeds.conf.default
 
-# Uncomment a feed source
-sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
-
-# Add a feed source
-#sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
-
-# fullcone NAT patch
-# git clone -b master --single-branch https://github.com/LGA1150/openwrt-fullconenat package/fullconenat
-# https://github.com/LGA1150/openwrt-fullconenat/issues/4
-# sed -i 's/SUBDIRS/M/' package/fullconenat/Makefile
-# following two lines need to be added in iptables
-# iptables -t nat -A POSTROUTING -o eth0 -j FULLCONENAT
-# iptables -t nat -A PREROUTING -i eth0 -j FULLCONENAT
-
 rm -rf ./package/lean/luci-theme-argon && git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon  #新的argon主题
 git clone https://github.com/jerrykuku/luci-app-argon-config package/lean/luci-app-argon-config  #argon主题设置（编译时候选上,在固件的‘系统’里面）
