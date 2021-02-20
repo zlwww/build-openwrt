@@ -9,7 +9,8 @@ sed -i 's/192.168.1.1/192.168.3.1/g' package/base-files/files/bin/config_generat
 sed -i '/uci commit system/i\uci set system.@system[0].hostname='CSCLEDE'' package/lean/default-settings/files/zzz-default-settings
 
 # 版本号里显示一个自己的名字（281677160 build $(TZ=UTC-8 date "+%Y.%m.%d") @ 这些都是后增加的）
-sed -i "s/OpenWrt /kkitown build $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" package/lean/default-settings/files/zzz-default-settings
+# sed -i "s/OpenWrt /kkitown build $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" package/lean/default-settings/files/zzz-default-settings
+sed -i "s/ImmortalWrt 18.06 /kkitown build $(TZ=UTC-8 date "+%Y.%m.%d") @ ImmortalWrt 18.06 /g" package/lean/default-settings/files/zzz-default-settings
 
 # 修改 argon 为默认主题,可根据你喜欢的修改成其他的（不选择那些会自动改变为默认主题的主题才有效果）
 # sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
@@ -19,7 +20,7 @@ sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' package/lean/default-settings/files/zzz
 
 # 修改内核版本，后加的…… 别人刷好的的是4.14，安装包里面有4.19，KERNEL_PATCHVER:=
 # sed -i 's/5.4/4.19/g' target/linux/Mediatek/Makefile
-sed -i 's/PATCHVER:=5.4/PATCHVER:=4.19/g' target/linux/Mediatek/Makefile
+# sed -i 's/PATCHVER:=5.4/PATCHVER:=4.19/g' target/linux/Mediatek/Makefile
 
 
 # 修改插件名字（修改名字后不知道会不会对插件功能有影响，自己多测试）
