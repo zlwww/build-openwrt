@@ -10,7 +10,7 @@
 #添加自定义插件链接（自己想要什么就github里面搜索然后添加）
 
 # 增加出国源
-sed -i '$a src-git helloworld https://github.com/fw876/helloworld' feeds.conf.default
+# sed -i '$a src-git helloworld https://github.com/fw876/helloworld' feeds.conf.default
 # Uncomment a feed source
 sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
