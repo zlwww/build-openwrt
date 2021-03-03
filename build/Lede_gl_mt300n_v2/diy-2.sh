@@ -18,9 +18,6 @@ sed -i "s/OpenWrt /kkitown build $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" pack
 # 设置密码为空（安装固件时无需密码登陆，然后自己修改想要的密码）
 sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' package/lean/default-settings/files/zzz-default-settings
 
-# 增加出国源
-sed -i '$a src-git helloworld https://github.com/fw876/helloworld' feeds.conf.default
-
 # 修改内核版本，后加的…… 别人刷好的的是4.14，安装包里面有4.19，KERNEL_PATCHVER:=
 # sed -i 's/5.4/4.19/g' target/linux/Mediatek/Makefile
 # sed -i 's/PATCHVER:=5.4/PATCHVER:=4.19/g' target/linux/Mediatek/Makefile
