@@ -5,6 +5,8 @@ Date:20210218 gli300nv2 终于编译成功了，只保留了ssr+xray1.3核心的
 再次关于加速选哪个，暂时看到的是只有7621支持硬件加速，其他的都是软件算法的软加速，Porject的固件默认是flowoffload加速，取消掉它之后会出现sfe加速选项，所以这里的7628AN选用sfe加速。
 试过5.4内核的LEDE的固件编译了两个加速同时存在，实测并无太大差别！不知道4.14表现如何
 
+xray1.31+4.14.222内核开启sfe转发，关闭桥接加速，开启DNS加速和多线程，并设置了联通代理，观察到的是负载可能更大了，但是下载速度提到了2.5M最大，并且speedtest可以到80左右了。
+
 ## Actions-OpenWrt
 
 #### - 【[Telegram交流群](https://t.me/joinchat/AAAAAE3eOMwEHysw9HMcVQ)】-&nbsp;&nbsp;&nbsp;- 【[Telegram下载](https://telegram.org/)】-&nbsp;&nbsp;&nbsp;- 【[Telegram使用中文方法](https://github.com/danshui-git/shuoming/blob/master/tele.md)】-
