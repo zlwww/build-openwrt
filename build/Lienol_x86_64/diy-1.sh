@@ -11,5 +11,5 @@
 sed -i '$a src-git helloworld https://github.com/fw876/helloworld' feeds.conf.default
 # Uncomment a feed source，如果用lede的源码只用加上这一句就可以看见ssr插件了！不用再次添加源的
 sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
-svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-sfe package/diy/luci-app-sfe
-svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-flowoffload package/diy/luci-app-flowoffload
+# svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-sfe package/diy/luci-app-sfe
+# svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-flowoffload package/diy/luci-app-flowoffload
