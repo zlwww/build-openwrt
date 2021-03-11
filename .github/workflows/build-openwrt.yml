@@ -115,7 +115,7 @@ jobs:
         
     - name: 加载源,patch补丁和自定义设置
       run: |
-        if [ ${{matrix.target}} != Lienol_x86_64 ]; then
+        if [ ${{matrix.target}} !== "Lienol_x86_64" ]; then
           rm -rf package/lienol/luci-app-sfe
           rm -rf package/lienol/luci-app-zerotier
         fi
