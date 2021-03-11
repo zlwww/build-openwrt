@@ -26,7 +26,7 @@ git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git package/diy/lu
 git clone https://github.com/esirplayground/luci-app-poweroff.git package/diy/luci-app-poweroff  #关机（增加关机功能）
 
 #增加软件，这里只是一个示范，这里不需要sfe，因为lede的源码是自带的有，如果你要用天灵的源码（immortalwrt）还想要这个sfe软件那就在那里加上，这里仅仅是作为一个示范！
-#读到的说明书是sfe支持4.14内核，4.19和5.4内核，都可以！ 三大源码其实最大的特色就是内核不一样，lede 内核5.4且最新，天灵18.07是master（4.14），lieonl是19.07master（应该是4.19）
+#读到的说明书是sfe支持4.14内核，4.19和5.4内核，都可以！ 三大源码其实最大的特色就是内核不一样，lede 内核5.4且最新，天灵18.07是master（4.14），lieonl是19.07master（依旧是4.14主线openwrt版本）
 #三个源码对应的是文件夹里的LEDE、Lieonl和Project ！这下知道差别了吧
 # svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-sfe package/diy/luci-app-sfe
 # sed -i '$a src-git helloworld https://github.com/fw876/helloworld' feeds.conf.default
