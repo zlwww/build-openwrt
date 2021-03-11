@@ -11,7 +11,8 @@ Date:20210218 gli300nv2 终于编译成功了，只保留了ssr+xray1.3核心的
 xray1.31+4.14.222内核开启sfe转发，关闭桥接加速，开启DNS加速和多线程，并设置了联通代理，观察到的是负载可能更大了，但是下载速度提到了2.5M最大，并且speedtest可以到80左右了。
 
 Lieonl的自带package有很多已经很老了，所以再添加新版本的时候会出重名和冲突，暂时试了一个解决办法不知道可以不，如果不行的话之后就固定天灵的固件了。在 下载${{matrix.target}}源码 的部分
-添加要替换的package，如 luci-app-sfe,在rm -rf package/lean/ 语句里添加即可，其他牌子的固件对应修改即可，同时你要在sh-1里面添加上你要替换的package源。
+添加要替换的package，如 luci-app-sfe,在rm -rf package/lean/ 语句里添加即可，其他牌子的固件对应修改即可，同时你要在sh-1里面添加上你要替换的package源。编译成功了，新版sfe也编译进去了，但是
+固件无法正常联网，所以Lieonl的固件不折腾了。4.14+latest内核+19.07
 
 ## Actions-OpenWrt
 
