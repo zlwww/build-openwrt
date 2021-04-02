@@ -17,8 +17,8 @@ sed -i "s/OpenWrt /kkitown build $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" pack
 # 修改内核版本
 #sed -i 's/KERNEL_PATCHVER:=4.14/KERNEL_PATCHVER:=4.19/g' target/linux/x86/Makefile
 # 删除lionl自带
-rm -rf package/lean/luci-app-sfe
-rm -rf package/lean/luci-app-zerotier
+# rm -rf package/lean/luci-app-sfe
+# rm -rf package/lean/luci-app-zerotier
 
 # 修改插件名字（修改名字后不知道会不会对插件功能有影响，自己多测试）
 sed -i 's/"BaiduPCS Web"/"百度网盘"/g' package/lean/luci-app-baidupcs-web/luasrc/controller/baidupcs-web.lua
