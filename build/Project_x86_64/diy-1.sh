@@ -10,5 +10,5 @@
 #如果你想用sfe加速
 # svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-sfe package/diy/luci-app-sfe
 # svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-flowoffload package/diy/luci-app-flowoffload
-# 添加 京东签到
- svn co https://github.com/jerrykuku/luci-app-jd-dailybonus/trunk package/diy/luci-app-jd-dailybonus  #京东签到
+# 添加 京东签到,这个无法添加，暂时未解决
+ # svn co https://github.com/jerrykuku/luci-app-jd-dailybonus/trunk package/diy/luci-app-jd-dailybonus  #京东签到
