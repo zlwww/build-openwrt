@@ -19,7 +19,6 @@ sed -i "s/OpenWrt /kkitown build $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" pack
 # 删除lionl自带
 rm -rf package/lean/luci-app-sfe
 rm -rf package/lean/luci-app-flowoffload
-rm -rf package/lean/luci-app-zerotier
 
 # 修改插件名字（修改名字后不知道会不会对插件功能有影响，自己多测试）
 sed -i 's/"BaiduPCS Web"/"百度网盘"/g' package/lean/luci-app-baidupcs-web/luasrc/controller/baidupcs-web.lua
