@@ -20,7 +20,7 @@ Lieonl的自带package有很多已经很老了，所以再添加新版本的时�
 因为 acc加速 
 >目前仅支持 PDNSD 和 DNSForwarder
 
-而Lieonl使用的是DDNS，所以使用加速要把DNSForwarder加上即可，不出意外编译的就可以用了。19.07
+而Lieonl使用的是DDNS，所以使用加速要把DNSForwarder加上即可，不出意外编译的就可以用了。默认添加的passwall直接设置了插件选项，但是他折叠了，所以你需要打开它把选中的项目取消掉；
 
 Lieonl 如果要替换自带软件，在对应的sh2文件添加语句即可，如为了要安装最新版的luci-app-sfe,而固件自带了，你只要在sh2文件中添加 rm -rf package/lean/luci-app-sfe 就删除了固件自带的 luci-app-sfe，在sh1中设置好自己的就可以了。
 
