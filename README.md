@@ -13,8 +13,8 @@ xray1.31+4.14.222内核开启sfe转发，关闭桥接加速，开启DNS加速和
 #30  xray1.4
 
 Lieonl的自带package有很多已经很老了，所以再添加新版本的时候会出重名和冲突，暂时试了一个解决办法不知道可以不，如果不行的话之后就固定天灵的固件了。在 下载${{matrix.target}}源码 的部分
-添加要替换的package，如 luci-app-sfe,在rm -rf package/lean/ 语句里添加即可，其他牌子的固件对应修改即可，同时你要在sh-1里面添加上你要替换的package源。编译成功了，新版sfe也编译进去了，但是
-固件无法正常联网，所以Lieonl的固件不折腾了。4.14+latest内核+19.07
+添加要替换的package，如 luci-app-sfe,在rm -rf package/lean/ 语句里添加即可，其他牌子的固件对应修改即可，同时你要在sh-1里面添加上你要替换的package源。编译成功了，新版sfe也编译进去了，但是固件无法正常联网，所以Lieonl的固件不折腾了。4.14+latest内核+19.07
+Lieonl 如果要替换自带软件，在对应的sh2 文件添加语句即可，如为了要安装最新版的luci-app-sfe,而固件自带了，你只要在sh2文件中添加 rm -rf package/lean/luci-app-sfe 就删除了固件自带的 luci-app-sfe，在sh1中设置好自己的就可以了；
 
 ## Actions-OpenWrt
 
