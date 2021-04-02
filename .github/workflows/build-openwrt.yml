@@ -115,9 +115,6 @@ jobs:
         
     - name: 加载源,patch补丁和自定义设置
       run: |
-        if [ ${{matrix.target}} == "Lienol_x86_64" ]; then
-          rm -rf package/lean/{luci-app-sfe,luci-app-zerotier}
-        fi
         if [ ${{matrix.target}} == "Lede_phicomm_n1" -o ${{matrix.target}} == "Project_phicomm_n1" ];then
           svn co https://github.com/281677160/N1/trunk reform
         fi
