@@ -15,7 +15,7 @@
 # 发现天灵的是最新的
 
 # 这里注意你如果要在lieonl的固件中使用acc加速，你必须选择 DNSForwarder把它也加上，因为加速里面 目前仅支持 PDNSD 和 DNSForwarder，而此固件有没有内置；
-svn co https://github.com/immortalwrt/immortalwrt/branches/openwrt-19.07/package/ctcgfw/luci-app-turboacc package/diy/luci-app-turboacc
+# svn co https://github.com/immortalwrt/immortalwrt/branches/openwrt-19.07/package/ctcgfw/luci-app-turboacc package/diy/luci-app-turboacc
 
 # svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-sfe package/diy/luci-app-sfe
 # svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-flowoffload package/diy/luci-app-flowoffload
@@ -27,7 +27,7 @@ svn co https://github.com/immortalwrt/immortalwrt/branches/openwrt-19.07/package
 #sed -i '$a src-git xiaorouji https://github.com/xiaorouji/openwrt-passwall.git' feeds.conf.default
 
 # 可能再加一个官方ssrplus
-git clone https://github.com/fw876/helloworld package/diy/helloworld
+# git clone https://github.com/fw876/helloworld package/diy/helloworld
 
 # 这里展示的是另外一种拉取方式，可能更加稳妥？想要passwall的在这里开启，已经试过可以正常拉取的
 # git clone https://github.com/xiaorouji/openwrt-passwall package/diy/luci-app-passwall
