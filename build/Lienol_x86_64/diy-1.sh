@@ -14,7 +14,7 @@ sed -i '$a src-git helloworld https://github.com/fw876/helloworld' feeds.conf.de
 # sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 # 发现天灵的是最新的
 # 这里注意你如果要在lieonl的固件中使用acc加速，你必须选择 DNSForwarder把它也加上，因为加速里面 目前仅支持 PDNSD 和 DNSForwarder，而此固件有没有内置；
-svn co https://github.com/immortalwrt/immortalwrt/branches/openwrt-19.07/package/ctcgfw/luci-app-turboacc package/diy/luci-app-turboacc
+# 天灵acc 不能加，一加就编译失败 svn co https://github.com/immortalwrt/immortalwrt/branches/openwrt-19.07/package/ctcgfw/luci-app-turboacc package/diy/luci-app-turboacc
 
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-sfe package/diy/luci-app-sfe
 # svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-flowoffload package/diy/luci-app-flowoffload
