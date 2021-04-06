@@ -20,8 +20,8 @@
 # svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-flowoffload package/diy/luci-app-flowoffload
 
 #真的是每一个都不一样，lienol维护的是19.07的主分支，如果需要添加passwall添加下面2行就可以，第二个是依赖，跟新的也算频繁，貌似很稳定，该有的插件都有了
-# sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
-# sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
+sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
+sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
 # 下面这个据说是官方支持的passwall，最好和上面的不要同时启用，怕冲突！！！
 # sed -i '$a src-git xiaorouji https://github.com/xiaorouji/openwrt-passwall.git' feeds.conf.default
 
@@ -30,5 +30,3 @@
 
 # 这里展示的是另外一种拉取方式，可能更加稳妥？想要passwall的在这里开启，已经试过可以正常拉取的
 # git clone https://github.com/xiaorouji/openwrt-passwall package/diy/luci-app-passwall
-sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
-sed -i '$a small https://github.com/kenzok8/small' feeds.conf.default
