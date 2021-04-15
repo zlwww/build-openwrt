@@ -16,7 +16,7 @@ sed -i "s/ImmortalWrt 18.06 /kkitown build $(TZ=UTC-8 date "+%Y.%m.%d") @ Immort
 sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' package/lean/default-settings/files/zzz-default-settings
 
 # 修改内核版本（版本内核默认4.19，还有4.14跟4.9内核）
-sed -i 's/KERNEL_PATCHVER:=4.14/KERNEL_PATCHVER:=4.19/g' target/linux/x86/Makefile
+# sed -i 's/KERNEL_PATCHVER:=4.14/KERNEL_PATCHVER:=4.19/g' target/linux/x86/Makefile
 
 # 修改版本号
 # sed -i 's/V2021/V$(date "+%Y.%m.%d")/g' package/lean/default-settings/files/zzz-default-settings
