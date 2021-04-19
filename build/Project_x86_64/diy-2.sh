@@ -15,10 +15,10 @@ sed -i "s/ImmortalWrt 18.06 /kkitown build $(TZ=UTC-8 date "+%Y.%m.%d") @ Immort
 # 设置密码为空（安装固件时无需密码登陆，然后自己修改想要的密码）
 sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' package/lean/default-settings/files/zzz-default-settings
 
-# 修改内核版本（版本内核默认4.19，还有4.14跟4.9内核）
+# 修改内核版本（版本内核默认4.19，还有4.14跟4.9内核）以下代码都无法正常切换
 # sed -i 's/KERNEL_PATCHVER:=4.14/KERNEL_PATCHVER:=4.19/g' target/linux/x86/Makefile
-sed -i 's/KERNEL_PATCHVER:=4.14/KERNEL_PATCHVER:=4.19/g' ./target/linux/x86/Makefile
-sed -i 's/KERNEL_TESTING_PATCHVER:=4.14/KERNEL_TESTING_PATCHVER:=4.19/g' ./target/linux/x86/Makefile
+# sed -i 's/KERNEL_PATCHVER:=4.14/KERNEL_PATCHVER:=4.19/g' ./target/linux/x86/Makefile
+# sed -i 's/KERNEL_TESTING_PATCHVER:=4.14/KERNEL_TESTING_PATCHVER:=4.19/g' ./target/linux/x86/Makefile
 
 # 修改版本号
 # sed -i 's/V2021/V$(date "+%Y.%m.%d")/g' package/lean/default-settings/files/zzz-default-settings
