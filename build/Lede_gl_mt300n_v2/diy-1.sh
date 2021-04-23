@@ -14,16 +14,16 @@
 # Uncomment a feed source，如果用lede的源码只用加上这一句就可以看见ssr插件了！不用再次添加源的
 sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
-git clone -b 18.06 https://github.com/garypang13/luci-theme-edge.git package/diy/luci-theme-edge  #主题-edge
-git clone https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom.git package/diy/luci-theme-infinityfreedom  #透明主题
-git clone -b master https://github.com/vernesong/OpenClash.git package/diy/luci-app-openclash  #openclash出国软件
-git clone https://github.com/frainzy1477/luci-app-clash.git package/diy/luci-app-clash  #clash出国软件
-git clone https://github.com/tty228/luci-app-serverchan.git package/diy/luci-app-serverchan  #微信推送
-git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/diy/luci-app-smartdns  #smartdns DNS加速
-git clone https://github.com/garypang13/luci-app-eqos.git package/diy/luci-app-eqos  #内网IP限速工具
-git clone https://github.com/jerrykuku/node-request.git package/diy/node-request  #京东签到依赖
-git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git package/diy/luci-app-jd-dailybonus  #京东签到
-git clone https://github.com/esirplayground/luci-app-poweroff.git package/diy/luci-app-poweroff  #关机（增加关机功能）
+# git clone -b 18.06 https://github.com/garypang13/luci-theme-edge.git package/diy/luci-theme-edge  #主题-edge
+# git clone https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom.git package/diy/luci-theme-infinityfreedom  #透明主题
+# git clone -b master https://github.com/vernesong/OpenClash.git package/diy/luci-app-openclash  #openclash出国软件
+# # git clone https://github.com/frainzy1477/luci-app-clash.git package/diy/luci-app-clash  #clash出国软件
+# git clone https://github.com/tty228/luci-app-serverchan.git package/diy/luci-app-serverchan  #微信推送
+# git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/diy/luci-app-smartdns  #smartdns DNS加速
+# git clone https://github.com/garypang13/luci-app-eqos.git package/diy/luci-app-eqos  #内网IP限速工具
+# git clone https://github.com/jerrykuku/node-request.git package/diy/node-request  #京东签到依赖
+# git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git package/diy/luci-app-jd-dailybonus  #京东签到
+# git clone https://github.com/esirplayground/luci-app-poweroff.git package/diy/luci-app-poweroff  #关机（增加关机功能）
 
 #增加软件，这里只是一个示范，这里不需要sfe，因为lede的源码是自带的有，如果你要用天灵的源码（immortalwrt）还想要这个sfe软件那就在那里加上，这里仅仅是作为一个示范！
 #读到的说明书是sfe支持4.14内核，4.19和5.4内核，都可以！ 三大源码其实最大的特色就是内核不一样，lede 内核5.4且最新，天灵18.07是master（4.14），lieonl是19.07master（依旧是4.14主线openwrt版本）
