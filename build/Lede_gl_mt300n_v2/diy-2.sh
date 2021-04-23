@@ -21,10 +21,16 @@ sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' package/lean/default-settings/files/zzz
 # 修改内核版本，后加的…… 别人刷好的的是4.14，安装包里面有4.19，KERNEL_PATCHVER:=
 # sed -i 's/5.4/4.19/g' target/linux/Mediatek/Makefile
 # sed -i 's/PATCHVER:=5.4/PATCHVER:=4.19/g' target/linux/Mediatek/Makefile
+
+# 修改内核版本（版本内核默认4.19，还有4.14跟4.9内核）以下代码都无法正常切换
+# sed -i 's/KERNEL_PATCHVER:=4.14/KERNEL_PATCHVER:=4.19/g' target/linux/x86/Makefile
+ sed -i 's/KERNEL_PATCHVER:=5.4/KERNEL_PATCHVER:=4.19/g' target/linux/x86/Makefile
+ sed -i 's/KERNEL_TESTING_PATCHVER:=5.4/KERNEL_TESTING_PATCHVER:=4.19/g' target/linux/x86/Makefile
+
 # 修改内核版本（版本内核默认4.19，还有4.14跟4.9内核）天灵版
 # sed -i 's/KERNEL_PATCHVER:=4.19/KERNEL_PATCHVER:=4.9/g' target/linux/Mediatek/Makefile
 # 修改内核版本 lede版
-sed -i 's/PATCHVER:=5.4/PATCHVER:=4.14/g' target/linux/Mediatek/Makefile
+sed -i 's/PATCHVER:=5.4/PATCHVER:=4.19/g' target/linux/Mediatek/Makefile
 
 # 修改插件名字（修改名字后不知道会不会对插件功能有影响，自己多测试）
 sed -i 's/"BaiduPCS Web"/"百度网盘"/g' package/lean/luci-app-baidupcs-web/luasrc/controller/baidupcs-web.lua
