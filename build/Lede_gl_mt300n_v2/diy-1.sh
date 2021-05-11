@@ -22,7 +22,7 @@ sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 # git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/diy/luci-app-smartdns  #smartdns DNS加速
 # git clone https://github.com/garypang13/luci-app-eqos.git package/diy/luci-app-eqos  #内网IP限速工具
 # git clone https://github.com/jerrykuku/node-request.git package/diy/node-request  #京东签到依赖
-# git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git package/diy/luci-app-jd-dailybonus  #京东签到
+git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git package/diy/luci-app-jd-dailybonus  #京东签到
 # git clone https://github.com/esirplayground/luci-app-poweroff.git package/diy/luci-app-poweroff  #关机（增加关机功能）
 
 #增加软件，这里只是一个示范，这里不需要sfe，因为lede的源码是自带的有，如果你要用天灵的源码（immortalwrt）还想要这个sfe软件那就在那里加上，这里仅仅是作为一个示范！
